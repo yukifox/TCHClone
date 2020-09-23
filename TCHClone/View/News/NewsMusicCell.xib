@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="94" id="KGk-i7-Jjw" customClass="NewsMusicCell" customModule="TCHClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="633" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="633" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xdi-JS-HeC">
+                        <rect key="frame" x="15" y="25" width="608" height="69"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BPE-4U-85B">
+                                <rect key="frame" x="20" y="-0.5" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="BPE-4U-85B" secondAttribute="height" multiplier="1:1" id="1YN-zR-dtg"/>
+                                    <constraint firstAttribute="width" constant="70" id="vUL-Lj-HGZ"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="oPY-4N-AAm">
+                                <rect key="frame" x="100" y="-1" width="488" height="71"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3o-HK-xNe">
+                                        <rect key="frame" x="0.0" y="0.0" width="488" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5J-iX-stB">
+                                        <rect key="frame" x="0.0" y="25.5" width="488" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <color key="textColor" systemColor="systemOrangeColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qJ5-T5-MXD">
+                                        <rect key="frame" x="0.0" y="50.5" width="488" height="20.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vdr-VN-Tde">
+                                                <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Vdr-VN-Tde" secondAttribute="height" multiplier="1:1" id="R4m-ZJ-dYx"/>
+                                                    <constraint firstAttribute="height" constant="15" id="yfv-HN-WEj"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uR-Y2-KeU">
+                                                <rect key="frame" x="20" y="0.0" width="468" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oPY-4N-AAm" firstAttribute="leading" secondItem="BPE-4U-85B" secondAttribute="trailing" constant="10" id="09H-A1-8Gp"/>
+                            <constraint firstItem="oPY-4N-AAm" firstAttribute="centerY" secondItem="Xdi-JS-HeC" secondAttribute="centerY" id="YNf-ec-o8O"/>
+                            <constraint firstItem="BPE-4U-85B" firstAttribute="centerY" secondItem="Xdi-JS-HeC" secondAttribute="centerY" id="ZzC-6o-aLQ"/>
+                            <constraint firstAttribute="trailing" secondItem="oPY-4N-AAm" secondAttribute="trailing" constant="20" id="cEt-xs-LHP"/>
+                            <constraint firstItem="BPE-4U-85B" firstAttribute="leading" secondItem="Xdi-JS-HeC" secondAttribute="leading" constant="20" id="oRa-b1-vJB"/>
+                            <constraint firstItem="oPY-4N-AAm" firstAttribute="height" secondItem="BPE-4U-85B" secondAttribute="height" multiplier="1.01667" id="sDC-XT-8hF"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nhạc đang phát tại nhà" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VN1-Cn-lC3">
+                        <rect key="frame" x="10" y="2" width="165" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Xdi-JS-HeC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="Ab9-Bk-Kmt"/>
+                    <constraint firstItem="Xdi-JS-HeC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="S7O-GT-OgW"/>
+                    <constraint firstItem="VN1-Cn-lC3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Sli-hD-Cmk"/>
+                    <constraint firstAttribute="bottom" secondItem="Xdi-JS-HeC" secondAttribute="bottom" id="Vop-Ds-OJH"/>
+                    <constraint firstItem="VN1-Cn-lC3" firstAttribute="bottom" secondItem="Xdi-JS-HeC" secondAttribute="top" constant="-5" id="qBn-Jl-b6I"/>
+                    <constraint firstAttribute="trailing" secondItem="Xdi-JS-HeC" secondAttribute="trailing" constant="10" id="sHc-65-rkB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgMusic" destination="BPE-4U-85B" id="oc7-Is-8oJ"/>
+                <outlet property="imgNowPlaying" destination="Vdr-VN-Tde" id="vXi-v7-Dx4"/>
+                <outlet property="lblActist" destination="v5J-iX-stB" id="603-Rv-Ipv"/>
+                <outlet property="lblMusic" destination="o3o-HK-xNe" id="Lr7-9E-XR4"/>
+                <outlet property="lblNowPlaying" destination="7uR-Y2-KeU" id="If7-Oa-sbO"/>
+                <outlet property="viewContainer" destination="Xdi-JS-HeC" id="GPv-OZ-evA"/>
+            </connections>
+            <point key="canvasLocation" x="107.97101449275362" y="145.98214285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
