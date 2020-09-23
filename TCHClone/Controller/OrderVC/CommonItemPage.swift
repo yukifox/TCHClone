@@ -35,8 +35,10 @@ class CommonItemPage: UICollectionViewController {
                 self = .commonPage
             case 1:
                 self = .drinkPage
-            default:
+            case 2:
                 self = .foodPage
+            default:
+                self = .commonPage
             }
         }
     }
@@ -167,8 +169,10 @@ class CommonItemPage: UICollectionViewController {
             case .drinkPage:
                 let drinkType = listTypeDrinkAvailable[indexPath.section]
                 title = stringDrinkItem(rawValue: drinkType)!.description
+                break
             case .foodPage:
                 title = stringTypeFoods.fastfood.description
+                break
             default:
                 title = ""
                 break

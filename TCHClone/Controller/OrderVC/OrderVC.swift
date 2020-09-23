@@ -284,6 +284,7 @@ class OrderVC: UIViewController {
         drinkPage.delegate = self
         arrVC.append(drinkPage)
         foodPage.viewingMode = CommonItemPage.ViewingMode(index: 2)
+        foodPage.delegate = self
         arrVC.append(foodPage)
         curPage = 1
         pageController = UIPageViewController.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
