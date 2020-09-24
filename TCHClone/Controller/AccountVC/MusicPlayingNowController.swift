@@ -9,11 +9,7 @@
 import UIKit
 class MusicPlayingNowController: UITableViewController {
     //MARK: - Properties
-    let mainView: UIScrollView = {
-       let view = UIScrollView()
-        view.backgroundColor = .groupTableViewBackground
-        return view
-    }()
+    
     let viewNowSong: UIView = {
        let view = UIView()
         view.backgroundColor = .white

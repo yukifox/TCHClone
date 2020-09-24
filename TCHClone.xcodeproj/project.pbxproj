@@ -66,6 +66,13 @@
 		E581A843251A0CFF005A1387 /* UIImageView + Gif Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E581A842251A0CFF005A1387 /* UIImageView + Gif Extension.swift */; };
 		E581A866251A12BB005A1387 /* resources_images_icons_audio_wave.gif in Resources */ = {isa = PBXBuildFile; fileRef = E581A865251A12BB005A1387 /* resources_images_icons_audio_wave.gif */; };
 		E581A86E251A39D4005A1387 /* MusicPlayingNowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E581A86D251A39D4005A1387 /* MusicPlayingNowController.swift */; };
+		E581A876251ADFA2005A1387 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = E581A875251ADFA2005A1387 /* Notification.swift */; };
+		E581A8A0251B3C19005A1387 /* CheckMyCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E581A89F251B3C18005A1387 /* CheckMyCart.swift */; };
+		E581A925251B810E005A1387 /* CellInfoPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E581A923251B810E005A1387 /* CellInfoPayment.swift */; };
+		E581A926251B810E005A1387 /* CellInfoPayment.xib in Resources */ = {isa = PBXBuildFile; fileRef = E581A924251B810E005A1387 /* CellInfoPayment.xib */; };
+		E581A92E251B8484005A1387 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E581A92D251B8484005A1387 /* UITextField+Extension.swift */; };
+		E581A936251BA880005A1387 /* DetailOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E581A934251BA880005A1387 /* DetailOrderCell.swift */; };
+		E581A937251BA880005A1387 /* DetailOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E581A935251BA880005A1387 /* DetailOrderCell.xib */; };
 		E583E7912493B0C0008B4D9D /* TitleSectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E583E7902493B0C0008B4D9D /* TitleSectionItem.swift */; };
 		E583E7A72495BC8E008B4D9D /* InforView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E583E7A62495BC8E008B4D9D /* InforView.swift */; };
 		E583E7A92498F6F8008B4D9D /* InforViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E583E7A82498F6F7008B4D9D /* InforViewCell.swift */; };
@@ -189,6 +196,13 @@
 		E581A842251A0CFF005A1387 /* UIImageView + Gif Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Gif Extension.swift"; sourceTree = "<group>"; };
 		E581A865251A12BB005A1387 /* resources_images_icons_audio_wave.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = resources_images_icons_audio_wave.gif; path = "../../../../../../Users/huy/Downloads/The Coffee House_v4.4.7_apkpure.com.apk.zip.out/res/drawable-mdpi/resources_images_icons_audio_wave.gif"; sourceTree = "<group>"; };
 		E581A86D251A39D4005A1387 /* MusicPlayingNowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayingNowController.swift; sourceTree = "<group>"; };
+		E581A875251ADFA2005A1387 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		E581A89F251B3C18005A1387 /* CheckMyCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMyCart.swift; sourceTree = "<group>"; };
+		E581A923251B810E005A1387 /* CellInfoPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellInfoPayment.swift; sourceTree = "<group>"; };
+		E581A924251B810E005A1387 /* CellInfoPayment.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellInfoPayment.xib; sourceTree = "<group>"; };
+		E581A92D251B8484005A1387 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		E581A934251BA880005A1387 /* DetailOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailOrderCell.swift; sourceTree = "<group>"; };
+		E581A935251BA880005A1387 /* DetailOrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailOrderCell.xib; sourceTree = "<group>"; };
 		E58213E124F8F36200D11653 /* TCHCloneRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TCHCloneRelease.entitlements; sourceTree = "<group>"; };
 		E583E7902493B0C0008B4D9D /* TitleSectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSectionItem.swift; sourceTree = "<group>"; };
 		E583E7A62495BC8E008B4D9D /* InforView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InforView.swift; sourceTree = "<group>"; };
@@ -293,6 +307,7 @@
 				E514DF5A248645DF00479883 /* DataStore.swift */,
 				E50C41BB24F6D765008DE306 /* FBSDKAPIs.swift */,
 				E59AD43024FB9E3E006FB31E /* UserServices.swift */,
+				E581A875251ADFA2005A1387 /* Notification.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -418,6 +433,7 @@
 			children = (
 				E56928F42457E04C004C891C /* OrderVC.swift */,
 				E503F7C5251201B40071A0C2 /* CommonItemPage.swift */,
+				E581A89F251B3C18005A1387 /* CheckMyCart.swift */,
 			);
 			path = OrderVC;
 			sourceTree = "<group>";
@@ -487,6 +503,10 @@
 				E583E7902493B0C0008B4D9D /* TitleSectionItem.swift */,
 				E583E7A62495BC8E008B4D9D /* InforView.swift */,
 				E583E7A82498F6F7008B4D9D /* InforViewCell.swift */,
+				E581A923251B810E005A1387 /* CellInfoPayment.swift */,
+				E581A924251B810E005A1387 /* CellInfoPayment.xib */,
+				E581A934251BA880005A1387 /* DetailOrderCell.swift */,
+				E581A935251BA880005A1387 /* DetailOrderCell.xib */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -533,6 +553,7 @@
 				E503F7BF2511E1080071A0C2 /* CustomSegmentViewControll.swift */,
 				E507DE13251564AE000D05FB /* CustomButtonClass.swift */,
 				E581A842251A0CFF005A1387 /* UIImageView + Gif Extension.swift */,
+				E581A92D251B8484005A1387 /* UITextField+Extension.swift */,
 			);
 			path = Ultis;
 			sourceTree = "<group>";
@@ -676,11 +697,13 @@
 				E5CD215E24598032008EA390 /* NewsMusicCell.xib in Resources */,
 				E56928C62457D55C004C891C /* LaunchScreen.storyboard in Resources */,
 				E5981459247EC30400517E02 /* OrderCell.xib in Resources */,
+				E581A937251BA880005A1387 /* DetailOrderCell.xib in Resources */,
 				E52CD8AF246EA3C4002651EA /* RewardsInforVC.xib in Resources */,
 				E5A35CA82459E31D005CC394 /* GoogleService-Info.plist in Resources */,
 				E56928C32457D55C004C891C /* Assets.xcassets in Resources */,
 				E581A866251A12BB005A1387 /* resources_images_icons_audio_wave.gif in Resources */,
 				E56928BE2457D556004C891C /* Main.storyboard in Resources */,
+				E581A926251B810E005A1387 /* CellInfoPayment.xib in Resources */,
 				E581A82625192C1A005A1387 /* SlideView.xib in Resources */,
 				E52CD8A724632FCB002651EA /* AccountCell.xib in Resources */,
 			);
@@ -849,6 +872,7 @@
 				E52CD8AE246EA3C4002651EA /* RewardsInforVC.swift in Sources */,
 				E52CD8AB246E5CE7002651EA /* AccountSection.swift in Sources */,
 				E5A35CB9245DD2A0005CC394 /* Customimage.swift in Sources */,
+				E581A92E251B8484005A1387 /* UITextField+Extension.swift in Sources */,
 				E5CD215424583ACB008EA390 /* Extensions.swift in Sources */,
 				E514DF572486402100479883 /* Endpoint.swift in Sources */,
 				E583E7AB249A8E74008B4D9D /* CustomRadionButton.swift in Sources */,
@@ -888,6 +912,8 @@
 				E56928EC2457D639004C891C /* MainTabViewController.swift in Sources */,
 				E52CD8A9246C67D6002651EA /* AccountFooter.swift in Sources */,
 				E5A35CBD24606384005CC394 /* Services.swift in Sources */,
+				E581A925251B810E005A1387 /* CellInfoPayment.swift in Sources */,
+				E581A8A0251B3C19005A1387 /* CheckMyCart.swift in Sources */,
 				E503F7D025125BD90071A0C2 /* ItemData+CoreDataClass.swift in Sources */,
 				E59AD43124FB9E3F006FB31E /* UserServices.swift in Sources */,
 				E56928B72457D556004C891C /* AppDelegate.swift in Sources */,
@@ -896,6 +922,7 @@
 				E5A35CAC245BFBF7005CC394 /* Ultitiles.swift in Sources */,
 				E5C4857F2477AE18008D8887 /* CustomButtonImageVertical.swift in Sources */,
 				E5981458247EC30400517E02 /* OrderCell.swift in Sources */,
+				E581A876251ADFA2005A1387 /* Notification.swift in Sources */,
 				E56928F32457DCBC004C891C /* NewsVC.swift in Sources */,
 				E583E7A72495BC8E008B4D9D /* InforView.swift in Sources */,
 				E50C41B224F44E97008DE306 /* LoginPhoneVC.swift in Sources */,
@@ -905,6 +932,7 @@
 				E5A35CB7245DB0F6005CC394 /* User.swift in Sources */,
 				E59FA7A0250F597E00E5AF31 /* CustomInforMarkerView.swift in Sources */,
 				E50C41BA24F51CC0008DE306 /* PopUpLoginEmail.swift in Sources */,
+				E581A936251BA880005A1387 /* DetailOrderCell.swift in Sources */,
 				E5192DD3250CD1E1002775DB /* GoogleMapAPI.swift in Sources */,
 				E52CD8A624632FCB002651EA /* AccountCell.swift in Sources */,
 				E52CD89E2462C5C6002651EA /* Protocol.swift in Sources */,

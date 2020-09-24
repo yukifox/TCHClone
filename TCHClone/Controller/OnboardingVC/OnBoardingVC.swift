@@ -57,6 +57,9 @@ class OnboardingViewController: UIViewController {
                 btnContinue.needsUpdateConstraints()
                 btnContinue.sizeToFit()
             }
+            if curentIndex != 0 {
+                btnSkip.isHidden = false
+            }
         }
     }
     
@@ -76,6 +79,7 @@ class OnboardingViewController: UIViewController {
         
         view.addSubview(btnSkip)
         btnSkip.setAnchor(top: view.topAnchor, left: nil, bottom: nil, right: view.rightAnchor, paddingTop: 50, paddingLeft: 0, paddingBottom: 20, paddingRight: 20)
+        btnSkip.isHidden = true
         view.addSubview(btnContinue)
         btnContinue.intrinsicContentSize.width
         btnContinue.setAnchor(top: nil, left: nil, bottom: view.safeBottomAnchor, right: nil, paddingTop: 0, paddingLeft: 0, paddingBottom: 15, paddingRight: 0, width: btnContinue.intrinsicContentSize.width + 150 ,height:  50)

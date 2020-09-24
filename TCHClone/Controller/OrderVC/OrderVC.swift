@@ -17,6 +17,7 @@ class OrderVC: UIViewController {
     //MARK: - Properties
     let `default` = UserDefaults.standard
     let dataStore = DataStore.shared
+    let notiCenter = NotificationServices.shared
 //    var items = [[ItemData]]()
     var listItem = [ItemData]() {
         didSet {
@@ -72,7 +73,7 @@ class OrderVC: UIViewController {
         ifView.layer.cornerRadius = 4
         return ifView
     }()
-    let cartView: UIView = {
+    lazy var cartView: UIView = {
         let view = UIView()
         view.backgroundColor = .orange
         view.isUserInteractionEnabled = true
@@ -85,6 +86,8 @@ class OrderVC: UIViewController {
         lbl.translatesAutoresizingMaskIntoConstraints = false
         lbl.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         lbl.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(gotoCart))
+        view.addGestureRecognizer(gesture)
         return view
     }()
     let cardNoti: UIView = {
@@ -183,7 +186,8 @@ class OrderVC: UIViewController {
         configHeaderView()
         initView()
         fetchData()
-//        fetchItemData()
+        NotificationCenter.default.addObserver(self, selector: #selector(gotoCart), name: Notification.Name("com.incart.tapped"), object: nil)
+        
         
     }
     
@@ -204,6 +208,9 @@ class OrderVC: UIViewController {
             }
         })
         
+    }
+    @objc func notificationIncartTapped() {
+        gotoCart()
     }
     
     @objc func btnshowIndexTapped() {
@@ -230,7 +237,12 @@ class OrderVC: UIViewController {
         }
         isShowIndexWindow = !isShowIndexWindow
     }
-    
+    @objc func gotoCart() {
+        let cartVC = CheckMyCart()
+        cartVC.listItem = listItem
+        cartVC.myListOrder = listChoose
+        self.navigationController?.pushViewController(cartVC, animated: true)
+    }
     @objc func selectedValueChanged(sender: CustomSegmentViewControll)  {
         
         switch sender.selectedSegmentIndex {
@@ -364,7 +376,9 @@ class OrderVC: UIViewController {
         }
     }
     func showNotiView(with name: String) {
+        
         lblNotiAddSuccess.text = "\(name) đã được thêm vào giỏ!"
+        notiCenter.createLocalNotification(title: "Tin từ Nhà", body: "Bạn còn quên gì trong giỏ hàng không, hãy thanh toán để tận hưởng nhé!", identifier: .inCart)
         UIView.animate(withDuration: 0.5, delay: 0.2, options: .curveLinear, animations: {
             self.cardNoti.alpha = 1
         }, completion: {( _) -> Void in

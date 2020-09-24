@@ -1,7 +1,6 @@
 {
   "images" : [
     {
-      "filename" : "resources_images_icons_ic_hour_countdown.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -10,6 +9,7 @@
       "scale" : "2x"
     },
     {
+      "filename" : "resources_images_icons_ic_hour_countdown.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

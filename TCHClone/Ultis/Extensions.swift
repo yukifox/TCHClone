@@ -381,6 +381,37 @@ extension UIView {
         }
 
     }
+extension UITextField {
+    
+//    @IBInspectable open var lineHeight: CGFloat {
+//        didSet {
+//            var bottomLine = CALayer()
+//            bottomLine.frame = CGRect(x: self.frame.maxX, y: frame.minY, width: self.frame.width, height: lineHeight)
+//            bottomLine.backgroundColor = UIColor.black.cgColor
+//            self.borderStyle = UITextField.BorderStyle.none
+//            self.layer.addSublayer(bottomLine)
+//        }
+//    }
+        
+}
+
+extension UIScrollView {
+
+    func resizeScrollViewContentSize() {
+
+        var contentRect = CGRect.zero
+
+        for view in self.subviews {
+
+            contentRect = contentRect.union(view.frame)
+
+        }
+
+        self.contentSize = contentRect.size
+
+    }
+
+}
 
 
 

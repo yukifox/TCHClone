@@ -24,10 +24,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 //        AppDelegate.managedObjectContext = persistentContainer.viewContext
         //Request Notification
+        
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound], completionHandler: {(granded, error) in
             
         })
-        
+        UNUserNotificationCenter.current().delegate = self
         GMSServices.provideAPIKey(API_KEY)
         GMSPlacesClient.provideAPIKey(API_KEY)
         FirebaseApp.configure()
@@ -73,9 +74,27 @@ extension AppDelegate {
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         Auth.auth().setAPNSToken(deviceToken, type: .prod)
     }
-    
-    
+}
+extension AppDelegate: UNUserNotificationCenterDelegate
+{
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void)
+    {
+        
+        let id = response.notification.request.identifier
+        if id == NotificationIdentifier.inCart.stringIdentifier {
+            NotificationCenter.default.post(name: Notification.Name("com.incart.tapped"), object: nil)
+        }
 
+        completionHandler()
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void)
+    {
+        let id = notification.request.identifier
+        print("Received notification with IDjcjkcha = \(id)")
+
+        completionHandler([.sound, .alert])
+    }
 }
 
     
