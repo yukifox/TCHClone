@@ -10,6 +10,7 @@ import Foundation
 import CoreData
 import UIKit
 import Alamofire
+import Firebase
 var imageDataCache = [String: Data]()
 class DataStore: NSObject {
     let persister = PersistenceService.shared
@@ -44,6 +45,33 @@ class DataStore: NSObject {
         })
         return data
     }
+    func fetchNotiFromData() -> [NotificationData] {
+        var data = [NotificationData]()
+        persister.fetch(NotificationData.self, completion: {(object) in
+            data = object
+        })
+        return data
+    }
+    func markReadNoti(with exaclyNotiId: String, userID: String) {
+//        let context = persister.context
+//        var result = NotificationData(context: context)
+
+    //Predicate
+        let predicate = NSPredicate(format: "notiID == %@", exaclyNotiId)
+
+        persister.fetchByPredicate(NotificationData.self, predicate: predicate, completion: {(listResult) in
+            let result = listResult[0]
+            result.setValue(true, forKey: "isRead")
+            print(listResult.count)
+        })
+        
+        let valueDict = ["isRead": true]
+        persister.saveContext(completion: {
+            USER_REF.child(userID).child("listNoti").child(exaclyNotiId).updateChildValues(valueDict, withCompletionBlock: {(error, _) in
+                
+            })
+        })
+    }
     func getDataFromDB(){
         
         do{
@@ -53,6 +81,19 @@ class DataStore: NSObject {
             print(ex.localizedDescription)
         }
         
+    }
+    func deleteAllNoti() {
+        let context = persister.context
+        persister.fetch(NotificationData.self, completion: {(listNoti) in
+            for noti in listNoti {
+                context.delete(noti)
+            }
+            do {
+                try context.save()
+            } catch {
+                print(error.localizedDescription)
+            }
+        })
     }
     
     func deleteAllPostData() {
@@ -81,7 +122,45 @@ class DataStore: NSObject {
             }
         })
     }
-    
+    func addNotiData(with notis: [NotificationGet]) {
+        for noti in notis {
+            let notiData = NotificationData(context: persister.context)
+            notiData.notiID = noti.id
+            notiData.title = noti.title
+            notiData.subtitle = noti.subtitle
+            notiData.body = noti.message
+            notiData.isRead = false
+            notiData.imgUrl = noti.linkImg
+            notiData.link = noti.urlLaunching
+            let stringDate = noti.date
+            let formatter = DateFormatter()
+            formatter.dateFormat = "dd:MM:yyyy HH:mm"
+            notiData.date = formatter.date(from: stringDate)
+            
+            persister.saveContext {
+                
+            }
+        }
+    }
+    func filterItemData(stringSearch: String?) -> [ItemData]? {
+        var result = [ItemData]()
+        let fetchRequest: NSFetchRequest<ItemData> = ItemData.fetchRequest()
+        var subPredicate = [NSPredicate]()
+        if stringSearch != nil {
+            let predicate = NSPredicate(format: "name contains[cd] %@", stringSearch!)
+            subPredicate.append(predicate)
+        }
+        if subPredicate.count > 0 {
+        let compoundPredicates = NSCompoundPredicate.init(type: .and, subpredicates: subPredicate)
+            fetchRequest.predicate = compoundPredicates
+        }
+        do {
+            result = try persister.context.fetch(fetchRequest)
+        } catch {
+            print(error.localizedDescription)
+        }
+        return result
+    }
     func requestItemAndSaveData(completion: @escaping([ItemData]) -> Void) {
         let config = URLSessionConfiguration.default
         config.waitsForConnectivity = true

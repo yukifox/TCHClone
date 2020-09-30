@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import ChameleonFramework
 class CheckMyCart: UIViewController, UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate  {
     //MARK: - Properties
     let mainView = UIScrollView()
@@ -74,6 +73,16 @@ class CheckMyCart: UIViewController, UITableViewDelegate, UITableViewDataSource,
         configTableView()
         initView()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyBoardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyBoardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
     
     //MARK: - Handler
     func configNavigationBar() {
@@ -90,6 +99,8 @@ class CheckMyCart: UIViewController, UITableViewDelegate, UITableViewDataSource,
         view.addSubview(mainView)
         view.backgroundColor = .groupTableViewBackground
         view.addSubview(bottomView)
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyBoard))
+        view.addGestureRecognizer(tap)
         bottomView.backgroundColor = .white
         bottomView.setAnchor(top: nil, left: view.leftAnchor, bottom: view.safeBottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, height: 140)
         let topLine = UIView()
@@ -181,7 +192,25 @@ class CheckMyCart: UIViewController, UITableViewDelegate, UITableViewDataSource,
         self.tabBarController?.tabBar.isHidden = false
         navigationController?.popToRootViewController(animated: true)
     }
-    
+    @objc func dismissKeyBoard() {
+        self.view.endEditing(true)
+    }
+    @objc func keyBoardWillShow(notification: Notification) {
+        guard let keyboardInfor = notification.userInfo else {return}
+        if let keyboardSize = (keyboardInfor[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue.size {
+            let keyBoardHeight = keyboardSize.height + 10
+            let contenInset = UIEdgeInsets(top: 0, left: 0, bottom: keyBoardHeight, right: 0)
+            self.mainView.contentInset = contenInset
+            var viewRect = self.view.frame
+            viewRect.size.height -= keyBoardHeight
+            
+
+        }
+    }
+    @objc func keyBoardWillHide(notification: Notification) {
+        let contenInset = UIEdgeInsets.zero
+        self.mainView.contentInset = contenInset
+    }
     //MARK: - Delegate
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
@@ -295,5 +324,8 @@ extension CheckMyCart: DetailOrderCellProtocol {
             }
         }
     }
+}
+extension CheckMyCart: UITextViewDelegate {
+    
 }
 

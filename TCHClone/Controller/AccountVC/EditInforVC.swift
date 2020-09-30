@@ -39,7 +39,7 @@ class EditInforVC: UIViewController {
     var result = [String]()
     var user: User? {
         didSet {
-            result.append((user?.name)!)
+            result.append((user?.name ?? user?.fbname)!)
             result.append(user?.sex ?? "")
             tableView.reloadData()
         }

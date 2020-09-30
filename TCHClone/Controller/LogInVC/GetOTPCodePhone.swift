@@ -145,6 +145,8 @@ class GetOTPCodePhoneVC: UIViewController {
     @objc func btnCancelTapped() {
         try! Auth.auth().signOut()
         self.dismiss(animated: true, completion: nil)
+        UserDefaults.standard.setValue(nil, forKey: "userID")
+
     }
     
     //View view send OTP

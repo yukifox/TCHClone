@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FBSDKLoginKit
 import FBSDKCoreKit
+import OneSignalNotificationServiceExtension
 
 private let reuseUdentifier = "Cell"
 private let cellMusic = "MusicCell"
@@ -81,13 +82,16 @@ class NewsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout, Ne
     let btnNoti: UIButton = {
         let btn = UIButton(type: .system)
         btn.setImage(#imageLiteral(resourceName: "ic_os_notification_fallback_white_24dp-1"), for: .normal)
+//        btn.addTarget(self, action: #selector(btnNotiTapped), for: .touchUpInside)
         return btn
     }()
+    var isInMainView = true
     
     //MARK: - Init
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(UIApplication.shared.keyWindow?.subviews)
         fetchcurUserData()
         configCollectionView()
         fetchPostData()
@@ -122,7 +126,9 @@ class NewsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout, Ne
         } else {
             let gesture = UITapGestureRecognizer(target: self, action: #selector(inforViewTapped))
             navigationItem.leftBarButtonItem = UIBarButtonItem(customView: viewNavigation)
+            viewNavigation.addGestureRecognizer(gesture)
             navigationController?.navigationBar.addGestureRecognizer(gesture)
+            
             
         }
         navigationController?.navigationBar.tintColor = .orange
@@ -175,6 +181,12 @@ class NewsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout, Ne
                 let uid = snapshot.key
                 guard let dictionary = snapshot.value as? Dictionary<String, AnyObject> else { return }
                 let user = User(uid: uid, dictionary: dictionary)
+                if user.name == nil {
+                    user.name = user.fbname
+                }
+                if user.points == nil {
+                    user.points = 0
+                }
                 self.user = user
                 
                 guard
@@ -205,20 +217,14 @@ class NewsVC: UICollectionViewController, UICollectionViewDelegateFlowLayout, Ne
         }
     }
     @objc func handlerNoti() {
-        do {
-            try Auth.auth().signOut()
-            
-            user = nil
-            configureNavigationBar()
-            let mainTab = MainTabViewController()
-            mainTab.configureViewController()
-            self.collectionView.reloadData()
-        } catch {
-            
-        }
+        let notiServices = NotificationServices.shared
+        let notificationListVC = NotificationVC()
+        notificationListVC.user = self.user
+        self.navigationController?.pushViewController(notificationListVC, animated: true)
+//        self.isInMainView = false
     }
     @objc func inforViewTapped() {
-        if user != nil {
+        if user != nil && isInMainView {
             let inforAccountVC = InforAccount()
             inforAccountVC.user = user
             inforAccountVC.keepTabbar = true

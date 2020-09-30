@@ -250,6 +250,8 @@ class SignUpVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
     @objc func btnCancelTapped() {
         if isUpdatePhoneNumber {
             try! Auth.auth().signOut()
+            UserDefaults.standard.setValue(nil, forKey: "userID")
+            
         }
         self.dismiss(animated: true, completion: nil)
     }

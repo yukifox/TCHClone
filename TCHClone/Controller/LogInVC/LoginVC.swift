@@ -15,6 +15,7 @@ class LoginVC: UIViewController {
     
 //    var didLoginHandler: (() -> ())?
     var signedUpHandler: ((String) -> Void)? = nil
+    let `default` = UserDefaults.standard
 
     
     //MARK: - Properties
@@ -367,12 +368,32 @@ class LoginVC: UIViewController {
                 let dictionaryValues = [
                     "fbname": fbname,
                     "email": email,
-                    "facebookId": facebookId
+                    "facebookId": facebookId,
+                    "phone": phone
                 ] as Dictionary<String, Any>
                 let value = [uid: dictionaryValues]
-                
+                //Set to user Default
+                self.default.setValue(uid, forKey: "userID")
                 //Update to database
                 DB_REF.child("users").child(uid).updateChildValues(dictionaryValues, withCompletionBlock: { (error, dataRef) in
+                    //check and update missing data
+                    DB_REF.child("users").child(uid).observeSingleEvent(of: .value, with: {(snapshot) in
+                        let uid = snapshot.key
+                        guard let dictionary = snapshot.value as? Dictionary<String, AnyObject> else { return }
+                        let user = User(uid: uid, dictionary: dictionary)
+                        var dictionaryUpdate = [String: AnyObject]()
+                        if user.name == nil {
+                            dictionaryUpdate["fullname"] = user.fbname as! AnyObject
+                        }
+                        if user.points == nil {
+                            dictionaryUpdate["points"] = 0 as AnyObject
+                        }
+                        if dictionary.count > 0 {
+                            DB_REF.child("users").child(uid).updateChildValues(dictionaryUpdate)
+                        }
+                        
+                        
+                    })
                     
                     guard let mainTabVC = UIApplication.shared.keyWindow?.rootViewController as? MainTabViewController else { return }
                     mainTabVC.configureViewController()

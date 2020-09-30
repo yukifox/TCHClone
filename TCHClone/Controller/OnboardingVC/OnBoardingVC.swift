@@ -72,6 +72,10 @@ class OnboardingViewController: UIViewController {
         scrollView.delegate = self
         
     }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+    }
     
     //MARK: - Handler
     func initView() {
@@ -131,7 +135,10 @@ class OnboardingViewController: UIViewController {
         let mainVC = MainTabViewController()
         mainVC.modalPresentationStyle = .fullScreen
         present(mainVC, animated: true, completion: nil)
+//        self.dismiss(animated: true, completion: nil)
+        UIApplication.shared.keyWindow?.rootViewController = MainTabViewController()
         presentingViewController?.dismiss(animated: false, completion: nil)
+        
     }
     @objc func btnContinueTapped() {
         if scrollView.contentOffset.x < scrollView.contentSize.width - view.frame.width {

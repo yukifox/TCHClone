@@ -105,6 +105,18 @@ class PersistenceService {
         }
         
     }
+    func fetchByPredicate<T: NSManagedObject> (_ type: T.Type, predicate: NSPredicate?, completion: @escaping([T]) -> Void) {
+        let request = NSFetchRequest<T>(entityName: String(describing: type))
+        if (predicate != nil) {
+            request.predicate = predicate
+        }
+        do {
+            let listObject = try context.fetch(request)
+            completion(listObject)
+        } catch {
+            completion([])
+        }
+    }
 }
 
 extension PersistenceService {

@@ -13,11 +13,12 @@ import FBSDKCoreKit
 import GoogleMaps
 import GooglePlaces
 import UserNotifications
+import OneSignal
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     static var managedObjectContext: NSManagedObjectContext?
-
+    let notificationServices = NotificationServices.shared
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
@@ -32,7 +33,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GMSServices.provideAPIKey(API_KEY)
         GMSPlacesClient.provideAPIKey(API_KEY)
         FirebaseApp.configure()
+        Auth.auth().languageCode = "vn";
+
         ApplicationDelegate.shared.application( application, didFinishLaunchingWithOptions: launchOptions )
+        //Remove this method to stop OneSignal Debugging
+//          OneSignal.setLogLevel(.LL_VERBOSE, visualLevel: .LL_NONE)
+
+          //START OneSignal initialization code
+          let onesignalInitSettings = [kOSSettingsKeyAutoPrompt: false, kOSSettingsKeyInAppLaunchURL: false]
+          
+          // Replace 'YOUR_ONESIGNAL_APP_ID' with your OneSignal App ID.
+          OneSignal.initWithLaunchOptions(launchOptions,
+            appId: APP_ID_ONESIGNAL,
+            handleNotificationAction: nil,
+            settings: onesignalInitSettings)
+
+        OneSignal.inFocusDisplayType = OSNotificationDisplayType.notification;
+        
+
+
+          // promptForPushNotifications will show the native iOS notification permission prompt.
+          // We recommend removing the following code and instead using an In-App Message to prompt for notification permission (See step 8)
+          OneSignal.promptForPushNotifications(userResponse: { accepted in
+            print("User accepted notifications: \(accepted)")
+          })
+          //END OneSignal initializataion code
         return true
     }
 
@@ -72,7 +97,8 @@ extension AppDelegate {
         }
     }
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        Auth.auth().setAPNSToken(deviceToken, type: .prod)
+        Auth.auth().setAPNSToken(deviceToken, type: .sandbox)
+        
     }
 }
 extension AppDelegate: UNUserNotificationCenterDelegate
@@ -81,9 +107,13 @@ extension AppDelegate: UNUserNotificationCenterDelegate
     {
         
         let id = response.notification.request.identifier
+        
         if id == NotificationIdentifier.inCart.stringIdentifier {
             NotificationCenter.default.post(name: Notification.Name("com.incart.tapped"), object: nil)
+        } else if UserDefaults.standard.value(forKey: "userID") != nil {
+            notificationServices.markReadNoti(with: id, userID: (UserDefaults.standard.value(forKey: "userID") as? String)!)
         }
+        
 
         completionHandler()
     }
@@ -91,11 +121,24 @@ extension AppDelegate: UNUserNotificationCenterDelegate
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void)
     {
         let id = notification.request.identifier
+        var data = notification.request.content.userInfo
+        data["isRead"] = false
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd:MM:yyyy HH:mm"
+        let dateString = formatter.string(from: date)
+        data["date"] = dateString
+        if id != NotificationIdentifier.inCart.stringIdentifier {
+            notificationServices.receviedNotificationFromServer(with: data, NotiId: id)
+        }
+        
         print("Received notification with IDjcjkcha = \(id)")
 
         completionHandler([.sound, .alert])
     }
+    
 }
+
 
     
     

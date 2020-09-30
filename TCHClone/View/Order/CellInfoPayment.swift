@@ -19,6 +19,10 @@ class CellInfoPayment: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        tfNote.delegate = self
+        tfName.delegate = self
+        tfPhone.delegate = self
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -27,4 +31,17 @@ class CellInfoPayment: UITableViewCell {
         // Configure the view for the selected state
     }
     
+}
+extension CellInfoPayment: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        tfName.resignFirstResponder()
+        tfNote.resignFirstResponder()
+        return true
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        tfName.resignFirstResponder()
+        tfPhone.resignFirstResponder()
+        tfNote.resignFirstResponder()
+    }
 }

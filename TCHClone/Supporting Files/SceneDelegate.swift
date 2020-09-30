@@ -8,6 +8,7 @@
 
 import UIKit
 import FBSDKCoreKit
+import Firebase
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
@@ -31,6 +32,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             rootView = MainTabViewController()
         } else {
             rootView = OnboardingViewController()
+            do {
+                try Auth.auth().signOut()
+            }
+            catch {
+                
+            }
         }
         window?.windowScene = windowSence
         window?.rootViewController = rootView

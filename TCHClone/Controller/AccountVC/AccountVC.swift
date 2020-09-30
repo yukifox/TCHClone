@@ -189,6 +189,7 @@ class AccountVC: UITableViewController, AccountFooterDelegate, AccountHeaderDele
         let logoutAction = UIAlertAction(title: "Đồng ý", style: .default, handler: {(_ ) in
             do {
                 try Auth.auth().signOut()
+                UserDefaults.standard.setValue(nil, forKey: "userID")
                 self.isLogIn = false
                 NotificationCenter.default.post(name: Notification.Name("com.user.logout.success"), object: nil)
                 self.tabBarController?.selectedIndex = 0

@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		40145D028565B606E4863792 /* Pods_TCHCloneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2CB0FFA281098B89C28FB30 /* Pods_TCHCloneTests.framework */; };
-		BD3737CA6E7733D19C5F11D0 /* Pods_TCHClone_TCHCloneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B595A40BC69A34B83079DE /* Pods_TCHClone_TCHCloneUITests.framework */; };
-		D216DD38B0CFD489FE840453 /* Pods_TCHClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 087F21DD0600D3DB59FD2A91 /* Pods_TCHClone.framework */; };
+		8DBC29FF617791B9B55026BB /* Pods_TCHCloneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33239C221FC1318DC90E93D8 /* Pods_TCHCloneTests.framework */; };
+		ACA09DCC7E74C8F1058E0F4A /* Pods_TCHClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED27DDE66914C60B6693E97 /* Pods_TCHClone.framework */; };
 		E503F7C02511E1080071A0C2 /* CustomSegmentViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = E503F7BF2511E1080071A0C2 /* CustomSegmentViewControll.swift */; };
 		E503F7C6251201B40071A0C2 /* CommonItemPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E503F7C5251201B40071A0C2 /* CommonItemPage.swift */; };
 		E503F7CF25125BD90071A0C2 /* ItemData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E503F7CD25125BD90071A0C2 /* ItemData+CoreDataProperties.swift */; };
@@ -59,6 +58,12 @@
 		E56928F52457E04C004C891C /* OrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56928F42457E04C004C891C /* OrderVC.swift */; };
 		E56928F72457E1A1004C891C /* StoreVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56928F62457E1A1004C891C /* StoreVC1.swift */; };
 		E56928F92457E2FE004C891C /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56928F82457E2FE004C891C /* AccountVC.swift */; };
+		E573372BC1A073626707A5C6 /* Pods_TCHClone_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08016B152C1639C085D6F967 /* Pods_TCHClone_OneSignalNotificationServiceExtension.framework */; };
+		E57D1460251D2EA900777498 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57D145F251D2EA900777498 /* UserNotifications.framework */; };
+		E57D1462251D2EA900777498 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57D1461251D2EA900777498 /* UserNotificationsUI.framework */; };
+		E57D1465251D2EA900777498 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57D1464251D2EA900777498 /* NotificationViewController.swift */; };
+		E57D1468251D2EA900777498 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57D1466251D2EA900777498 /* MainInterface.storyboard */; };
+		E57D146C251D2EA900777498 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E57D145E251D2EA900777498 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E581A7B32518B93B005A1387 /* CellCollectionPostItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E581A7B22518B93B005A1387 /* CellCollectionPostItem.swift */; };
 		E581A7F32518FD79005A1387 /* OnBoardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E581A7F22518FD79005A1387 /* OnBoardingVC.swift */; };
 		E581A82525192C1A005A1387 /* SlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E581A82325192C1A005A1387 /* SlideView.swift */; };
@@ -66,7 +71,7 @@
 		E581A843251A0CFF005A1387 /* UIImageView + Gif Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E581A842251A0CFF005A1387 /* UIImageView + Gif Extension.swift */; };
 		E581A866251A12BB005A1387 /* resources_images_icons_audio_wave.gif in Resources */ = {isa = PBXBuildFile; fileRef = E581A865251A12BB005A1387 /* resources_images_icons_audio_wave.gif */; };
 		E581A86E251A39D4005A1387 /* MusicPlayingNowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E581A86D251A39D4005A1387 /* MusicPlayingNowController.swift */; };
-		E581A876251ADFA2005A1387 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = E581A875251ADFA2005A1387 /* Notification.swift */; };
+		E581A876251ADFA2005A1387 /* NotificationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E581A875251ADFA2005A1387 /* NotificationServices.swift */; };
 		E581A8A0251B3C19005A1387 /* CheckMyCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E581A89F251B3C18005A1387 /* CheckMyCart.swift */; };
 		E581A925251B810E005A1387 /* CellInfoPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E581A923251B810E005A1387 /* CellInfoPayment.swift */; };
 		E581A926251B810E005A1387 /* CellInfoPayment.xib in Resources */ = {isa = PBXBuildFile; fileRef = E581A924251B810E005A1387 /* CellInfoPayment.xib */; };
@@ -88,7 +93,6 @@
 		E59AD42F24F91C85006FB31E /* GetOTPCodePhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59AD42E24F91C85006FB31E /* GetOTPCodePhone.swift */; };
 		E59AD43124FB9E3F006FB31E /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59AD43024FB9E3E006FB31E /* UserServices.swift */; };
 		E59FA7A0250F597E00E5AF31 /* CustomInforMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59FA79F250F597E00E5AF31 /* CustomInforMarkerView.swift */; };
-		E5A35CA82459E31D005CC394 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5A35CA72459E31D005CC394 /* GoogleService-Info.plist */; };
 		E5A35CAC245BFBF7005CC394 /* Ultitiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A35CAB245BFBF7005CC394 /* Ultitiles.swift */; };
 		E5A35CAE245C07D2005CC394 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A35CAD245C07D2005CC394 /* LoginVC.swift */; };
 		E5A35CB0245C7DB0005CC394 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A35CAF245C7DB0005CC394 /* CustomButton.swift */; };
@@ -99,12 +103,20 @@
 		E5A35CBB2460634A005CC394 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A35CBA2460634A005CC394 /* Post.swift */; };
 		E5A35CBD24606384005CC394 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A35CBC24606384005CC394 /* Services.swift */; };
 		E5AD7B3D249E5426009B1698 /* RadioButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AD7B3C249E5426009B1698 /* RadioButtonView.swift */; };
+		E5C3DD78251D2FB20031B3C3 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C3DD77251D2FB20031B3C3 /* NotificationService.swift */; };
 		E5C4857F2477AE18008D8887 /* CustomButtonImageVertical.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C4857E2477AE18008D8887 /* CustomButtonImageVertical.swift */; };
 		E5CD215424583ACB008EA390 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CD215324583ACB008EA390 /* Extensions.swift */; };
 		E5CD21572458BAD9008EA390 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CD21562458BAD9008EA390 /* NewsCell.swift */; };
 		E5CD21592458BCDA008EA390 /* NewsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CD21582458BCDA008EA390 /* NewsHeader.swift */; };
 		E5CD215D24598032008EA390 /* NewsMusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CD215B24598032008EA390 /* NewsMusicCell.swift */; };
 		E5CD215E24598032008EA390 /* NewsMusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5CD215C24598032008EA390 /* NewsMusicCell.xib */; };
+		E5D4E28A251DF13200F9778A /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D4E289251DF13200F9778A /* Notification.swift */; };
+		E5FAAE882520EC8C00206F1C /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FAAE872520EC8C00206F1C /* NotificationVC.swift */; };
+		E5FAAE8F2521C3EA00206F1C /* Notification+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FAAE8E2521C3EA00206F1C /* Notification+CoreDataProperties.swift */; };
+		E5FAAE902521C3EA00206F1C /* Notification+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FAAE8D2521C3E900206F1C /* Notification+CoreDataClass.swift */; };
+		E5FAAE972523B26900206F1C /* NotificationViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FAAE962523B26900206F1C /* NotificationViewCell.swift */; };
+		E5FAAEF62524759600206F1C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E5FAAEF52524759600206F1C /* GoogleService-Info.plist */; };
+		F4771AB87B8ACFC777DB51CC /* Pods_TCHClone_TCHCloneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB2062545451EFCE941D80E8 /* Pods_TCHClone_TCHCloneUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,18 +134,42 @@
 			remoteGlobalIDString = E56928B22457D556004C891C;
 			remoteInfo = TCHClone;
 		};
+		E57D146A251D2EA900777498 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E56928AB2457D556004C891C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E57D145D251D2EA900777498;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E57D146D251D2EA900777498 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E57D146C251D2EA900777498 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		087F21DD0600D3DB59FD2A91 /* Pods_TCHClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCHClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B632D3BE24E7478C66B9208 /* Pods-TCHClone-TCHCloneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCHClone-TCHCloneUITests.release.xcconfig"; path = "Target Support Files/Pods-TCHClone-TCHCloneUITests/Pods-TCHClone-TCHCloneUITests.release.xcconfig"; sourceTree = "<group>"; };
-		4B74951BC4409505E69F0381 /* Pods-TCHCloneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCHCloneTests.release.xcconfig"; path = "Target Support Files/Pods-TCHCloneTests/Pods-TCHCloneTests.release.xcconfig"; sourceTree = "<group>"; };
-		671696353556CE3DBA50BBB9 /* Pods-TCHClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCHClone.debug.xcconfig"; path = "Target Support Files/Pods-TCHClone/Pods-TCHClone.debug.xcconfig"; sourceTree = "<group>"; };
-		77B595A40BC69A34B83079DE /* Pods_TCHClone_TCHCloneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCHClone_TCHCloneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B798B16900735B887E26F97 /* Pods-TCHClone-TCHCloneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCHClone-TCHCloneUITests.debug.xcconfig"; path = "Target Support Files/Pods-TCHClone-TCHCloneUITests/Pods-TCHClone-TCHCloneUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		C2CB0FFA281098B89C28FB30 /* Pods_TCHCloneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCHCloneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C434BA29B198D2DD353CD19A /* Pods-TCHCloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCHCloneTests.debug.xcconfig"; path = "Target Support Files/Pods-TCHCloneTests/Pods-TCHCloneTests.debug.xcconfig"; sourceTree = "<group>"; };
-		CA109C5955829CED21A34F03 /* Pods-TCHClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCHClone.release.xcconfig"; path = "Target Support Files/Pods-TCHClone/Pods-TCHClone.release.xcconfig"; sourceTree = "<group>"; };
+		08016B152C1639C085D6F967 /* Pods_TCHClone_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCHClone_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E1451CFE23ADF7816D4AF6F /* Pods-TCHCloneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCHCloneTests.release.xcconfig"; path = "Target Support Files/Pods-TCHCloneTests/Pods-TCHCloneTests.release.xcconfig"; sourceTree = "<group>"; };
+		2D396566E440BC70183E286D /* Pods-TCHCloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCHCloneTests.debug.xcconfig"; path = "Target Support Files/Pods-TCHCloneTests/Pods-TCHCloneTests.debug.xcconfig"; sourceTree = "<group>"; };
+		33239C221FC1318DC90E93D8 /* Pods_TCHCloneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCHCloneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B82EECB96003853585B090E /* Pods-TCHClone-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCHClone-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-TCHClone-OneSignalNotificationServiceExtension/Pods-TCHClone-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		42D156021C6F5780FD20AB43 /* Pods-TCHClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCHClone.release.xcconfig"; path = "Target Support Files/Pods-TCHClone/Pods-TCHClone.release.xcconfig"; sourceTree = "<group>"; };
+		46A1783B7CF468629E966B8F /* Pods-TCHClone-TCHCloneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCHClone-TCHCloneUITests.debug.xcconfig"; path = "Target Support Files/Pods-TCHClone-TCHCloneUITests/Pods-TCHClone-TCHCloneUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		638AB0AE7C6457014E3E280D /* Pods-TCHClone-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCHClone-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-TCHClone-OneSignalNotificationServiceExtension/Pods-TCHClone-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		72AAD8D85A59BB92AC107FFA /* Pods-TCHClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCHClone.debug.xcconfig"; path = "Target Support Files/Pods-TCHClone/Pods-TCHClone.debug.xcconfig"; sourceTree = "<group>"; };
+		7ED27DDE66914C60B6693E97 /* Pods_TCHClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCHClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		980C9AA1E1D4B7DCD3302ECB /* Pods-TCHClone-TCHCloneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCHClone-TCHCloneUITests.release.xcconfig"; path = "Target Support Files/Pods-TCHClone-TCHCloneUITests/Pods-TCHClone-TCHCloneUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CB2062545451EFCE941D80E8 /* Pods_TCHClone_TCHCloneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCHClone_TCHCloneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E503F7BF2511E1080071A0C2 /* CustomSegmentViewControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentViewControll.swift; sourceTree = "<group>"; };
 		E503F7C5251201B40071A0C2 /* CommonItemPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonItemPage.swift; sourceTree = "<group>"; };
 		E503F7CD25125BD90071A0C2 /* ItemData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemData+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -189,6 +225,12 @@
 		E56928F42457E04C004C891C /* OrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderVC.swift; sourceTree = "<group>"; };
 		E56928F62457E1A1004C891C /* StoreVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreVC1.swift; sourceTree = "<group>"; };
 		E56928F82457E2FE004C891C /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
+		E57D145E251D2EA900777498 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57D145F251D2EA900777498 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		E57D1461251D2EA900777498 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		E57D1464251D2EA900777498 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		E57D1467251D2EA900777498 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		E57D1469251D2EA900777498 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E581A7B22518B93B005A1387 /* CellCollectionPostItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCollectionPostItem.swift; sourceTree = "<group>"; };
 		E581A7F22518FD79005A1387 /* OnBoardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingVC.swift; sourceTree = "<group>"; };
 		E581A82325192C1A005A1387 /* SlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideView.swift; sourceTree = "<group>"; };
@@ -196,7 +238,7 @@
 		E581A842251A0CFF005A1387 /* UIImageView + Gif Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Gif Extension.swift"; sourceTree = "<group>"; };
 		E581A865251A12BB005A1387 /* resources_images_icons_audio_wave.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = resources_images_icons_audio_wave.gif; path = "../../../../../../Users/huy/Downloads/The Coffee House_v4.4.7_apkpure.com.apk.zip.out/res/drawable-mdpi/resources_images_icons_audio_wave.gif"; sourceTree = "<group>"; };
 		E581A86D251A39D4005A1387 /* MusicPlayingNowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayingNowController.swift; sourceTree = "<group>"; };
-		E581A875251ADFA2005A1387 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		E581A875251ADFA2005A1387 /* NotificationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationServices.swift; sourceTree = "<group>"; };
 		E581A89F251B3C18005A1387 /* CheckMyCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMyCart.swift; sourceTree = "<group>"; };
 		E581A923251B810E005A1387 /* CellInfoPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellInfoPayment.swift; sourceTree = "<group>"; };
 		E581A924251B810E005A1387 /* CellInfoPayment.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellInfoPayment.xib; sourceTree = "<group>"; };
@@ -219,7 +261,6 @@
 		E59AD42E24F91C85006FB31E /* GetOTPCodePhone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetOTPCodePhone.swift; sourceTree = "<group>"; };
 		E59AD43024FB9E3E006FB31E /* UserServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
 		E59FA79F250F597E00E5AF31 /* CustomInforMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInforMarkerView.swift; sourceTree = "<group>"; };
-		E5A35CA72459E31D005CC394 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E5A35CAB245BFBF7005CC394 /* Ultitiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ultitiles.swift; sourceTree = "<group>"; };
 		E5A35CAD245C07D2005CC394 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		E5A35CAF245C7DB0005CC394 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -230,12 +271,21 @@
 		E5A35CBA2460634A005CC394 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		E5A35CBC24606384005CC394 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		E5AD7B3C249E5426009B1698 /* RadioButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonView.swift; sourceTree = "<group>"; };
+		E5C3DD77251D2FB20031B3C3 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		E5C3DEA5251D85110031B3C3 /* TCHClone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TCHClone.entitlements; sourceTree = "<group>"; };
+		E5C3DEAA251D85870031B3C3 /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
 		E5C4857E2477AE18008D8887 /* CustomButtonImageVertical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonImageVertical.swift; sourceTree = "<group>"; };
 		E5CD215324583ACB008EA390 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E5CD21562458BAD9008EA390 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		E5CD21582458BCDA008EA390 /* NewsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsHeader.swift; sourceTree = "<group>"; };
 		E5CD215B24598032008EA390 /* NewsMusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsMusicCell.swift; sourceTree = "<group>"; };
 		E5CD215C24598032008EA390 /* NewsMusicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsMusicCell.xib; sourceTree = "<group>"; };
+		E5D4E289251DF13200F9778A /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		E5FAAE872520EC8C00206F1C /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
+		E5FAAE8D2521C3E900206F1C /* Notification+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Notification+CoreDataClass.swift"; path = "/Volumes/Data/ios/TCHClone/TCHClone/Supporting Files/Notification+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		E5FAAE8E2521C3EA00206F1C /* Notification+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Notification+CoreDataProperties.swift"; path = "/Volumes/Data/ios/TCHClone/TCHClone/Supporting Files/Notification+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		E5FAAE962523B26900206F1C /* NotificationViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewCell.swift; sourceTree = "<group>"; };
+		E5FAAEF52524759600206F1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Users/huy/Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,7 +293,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D216DD38B0CFD489FE840453 /* Pods_TCHClone.framework in Frameworks */,
+				ACA09DCC7E74C8F1058E0F4A /* Pods_TCHClone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +301,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40145D028565B606E4863792 /* Pods_TCHCloneTests.framework in Frameworks */,
+				8DBC29FF617791B9B55026BB /* Pods_TCHCloneTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +309,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD3737CA6E7733D19C5F11D0 /* Pods_TCHClone_TCHCloneUITests.framework in Frameworks */,
+				F4771AB87B8ACFC777DB51CC /* Pods_TCHClone_TCHCloneUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E57D145B251D2EA900777498 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57D1462251D2EA900777498 /* UserNotificationsUI.framework in Frameworks */,
+				E57D1460251D2EA900777498 /* UserNotifications.framework in Frameworks */,
+				E573372BC1A073626707A5C6 /* Pods_TCHClone_OneSignalNotificationServiceExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,12 +329,14 @@
 		09CE7175908C1AEC9D402096 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				671696353556CE3DBA50BBB9 /* Pods-TCHClone.debug.xcconfig */,
-				CA109C5955829CED21A34F03 /* Pods-TCHClone.release.xcconfig */,
-				9B798B16900735B887E26F97 /* Pods-TCHClone-TCHCloneUITests.debug.xcconfig */,
-				4B632D3BE24E7478C66B9208 /* Pods-TCHClone-TCHCloneUITests.release.xcconfig */,
-				C434BA29B198D2DD353CD19A /* Pods-TCHCloneTests.debug.xcconfig */,
-				4B74951BC4409505E69F0381 /* Pods-TCHCloneTests.release.xcconfig */,
+				72AAD8D85A59BB92AC107FFA /* Pods-TCHClone.debug.xcconfig */,
+				42D156021C6F5780FD20AB43 /* Pods-TCHClone.release.xcconfig */,
+				3B82EECB96003853585B090E /* Pods-TCHClone-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				638AB0AE7C6457014E3E280D /* Pods-TCHClone-OneSignalNotificationServiceExtension.release.xcconfig */,
+				46A1783B7CF468629E966B8F /* Pods-TCHClone-TCHCloneUITests.debug.xcconfig */,
+				980C9AA1E1D4B7DCD3302ECB /* Pods-TCHClone-TCHCloneUITests.release.xcconfig */,
+				2D396566E440BC70183E286D /* Pods-TCHCloneTests.debug.xcconfig */,
+				0E1451CFE23ADF7816D4AF6F /* Pods-TCHCloneTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -282,9 +344,12 @@
 		972CCC9C30888BE14A69FA19 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				087F21DD0600D3DB59FD2A91 /* Pods_TCHClone.framework */,
-				77B595A40BC69A34B83079DE /* Pods_TCHClone_TCHCloneUITests.framework */,
-				C2CB0FFA281098B89C28FB30 /* Pods_TCHCloneTests.framework */,
+				E57D145F251D2EA900777498 /* UserNotifications.framework */,
+				E57D1461251D2EA900777498 /* UserNotificationsUI.framework */,
+				7ED27DDE66914C60B6693E97 /* Pods_TCHClone.framework */,
+				08016B152C1639C085D6F967 /* Pods_TCHClone_OneSignalNotificationServiceExtension.framework */,
+				CB2062545451EFCE941D80E8 /* Pods_TCHClone_TCHCloneUITests.framework */,
+				33239C221FC1318DC90E93D8 /* Pods_TCHCloneTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -307,7 +372,7 @@
 				E514DF5A248645DF00479883 /* DataStore.swift */,
 				E50C41BB24F6D765008DE306 /* FBSDKAPIs.swift */,
 				E59AD43024FB9E3E006FB31E /* UserServices.swift */,
-				E581A875251ADFA2005A1387 /* Notification.swift */,
+				E581A875251ADFA2005A1387 /* NotificationServices.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -315,12 +380,13 @@
 		E5192DD4250DC51C002775DB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E5FAAE8D2521C3E900206F1C /* Notification+CoreDataClass.swift */,
+				E5FAAE8E2521C3EA00206F1C /* Notification+CoreDataProperties.swift */,
 				E581A865251A12BB005A1387 /* resources_images_icons_audio_wave.gif */,
 				E503F7CE25125BD90071A0C2 /* ItemData+CoreDataClass.swift */,
 				E503F7CD25125BD90071A0C2 /* ItemData+CoreDataProperties.swift */,
 				E514DF5C248665C200479883 /* PostData+CoreDataProperties copy.swift */,
 				E514DF5D248665C200479883 /* PostData+CoreDataClass copy.swift */,
-				E58213E124F8F36200D11653 /* TCHCloneRelease.entitlements */,
 				E56928B62457D556004C891C /* AppDelegate.swift */,
 				E56928B82457D556004C891C /* SceneDelegate.swift */,
 				E56928BC2457D556004C891C /* Main.storyboard */,
@@ -349,6 +415,7 @@
 				E56928B52457D556004C891C /* TCHClone */,
 				E56928CF2457D55D004C891C /* TCHCloneTests */,
 				E56928DA2457D55D004C891C /* TCHCloneUITests */,
+				E57D1463251D2EA900777498 /* OneSignalNotificationServiceExtension */,
 				E56928B42457D556004C891C /* Products */,
 				09CE7175908C1AEC9D402096 /* Pods */,
 				972CCC9C30888BE14A69FA19 /* Frameworks */,
@@ -361,6 +428,7 @@
 				E56928B32457D556004C891C /* TCHClone.app */,
 				E56928CC2457D55D004C891C /* TCHCloneTests.xctest */,
 				E56928D72457D55D004C891C /* TCHCloneUITests.xctest */,
+				E57D145E251D2EA900777498 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -368,11 +436,13 @@
 		E56928B52457D556004C891C /* TCHClone */ = {
 			isa = PBXGroup;
 			children = (
+				E5FAAEF52524759600206F1C /* GoogleService-Info.plist */,
+				E5C3DEA5251D85110031B3C3 /* TCHClone.entitlements */,
+				E58213E124F8F36200D11653 /* TCHCloneRelease.entitlements */,
 				E56928C72457D55C004C891C /* Info.plist */,
 				E5192DD4250DC51C002775DB /* Supporting Files */,
 				E514DF5324863DF300479883 /* Helper */,
 				E5A35CB5245DB0E6005CC394 /* Model */,
-				E5A35CA72459E31D005CC394 /* GoogleService-Info.plist */,
 				E5CD21552458B959008EA390 /* View */,
 				E5CD215224583AB8008EA390 /* Ultis */,
 				E56928EA2457D5FA004C891C /* Controller */,
@@ -424,6 +494,7 @@
 			isa = PBXGroup;
 			children = (
 				E56928F22457DCBC004C891C /* NewsVC.swift */,
+				E5FAAE872520EC8C00206F1C /* NotificationVC.swift */,
 			);
 			path = NewsVC;
 			sourceTree = "<group>";
@@ -476,6 +547,18 @@
 				E59AD42E24F91C85006FB31E /* GetOTPCodePhone.swift */,
 			);
 			path = LogInVC;
+			sourceTree = "<group>";
+		};
+		E57D1463251D2EA900777498 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				E5C3DEAA251D85870031B3C3 /* OneSignalNotificationServiceExtension.entitlements */,
+				E57D1464251D2EA900777498 /* NotificationViewController.swift */,
+				E57D1466251D2EA900777498 /* MainInterface.storyboard */,
+				E57D1469251D2EA900777498 /* Info.plist */,
+				E5C3DD77251D2FB20031B3C3 /* NotificationService.swift */,
+			);
+			path = OneSignalNotificationServiceExtension;
 			sourceTree = "<group>";
 		};
 		E581A7F12518FB49005A1387 /* OnboardingVC */ = {
@@ -531,6 +614,7 @@
 				E50C41B524F4AF71008DE306 /* National.swift */,
 				E5192DD2250CD1E1002775DB /* GoogleMapAPI.swift */,
 				E503F7D5251278830071A0C2 /* DataVersion.swift */,
+				E5D4E289251DF13200F9778A /* Notification.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -579,6 +663,7 @@
 				E5CD21562458BAD9008EA390 /* NewsCell.swift */,
 				E5CD215B24598032008EA390 /* NewsMusicCell.swift */,
 				E581A7B22518B93B005A1387 /* CellCollectionPostItem.swift */,
+				E5FAAE962523B26900206F1C /* NotificationViewCell.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -590,16 +675,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E56928E02457D55D004C891C /* Build configuration list for PBXNativeTarget "TCHClone" */;
 			buildPhases = (
-				121AD533BE31EECBF41AD2E5 /* [CP] Check Pods Manifest.lock */,
+				7EBAFF81E03ABB1E59FA2050 /* [CP] Check Pods Manifest.lock */,
 				E56928AF2457D556004C891C /* Sources */,
 				E56928B02457D556004C891C /* Frameworks */,
 				E56928B12457D556004C891C /* Resources */,
-				D1CFB162CFA2A414B3E4FC45 /* [CP] Embed Pods Frameworks */,
-				6AC94A5E2485850C895F470A /* [CP] Copy Pods Resources */,
+				E57D146D251D2EA900777498 /* Embed App Extensions */,
+				0D9626C20667B9021AD87C6E /* [CP] Embed Pods Frameworks */,
+				12F00C43A5CC01D440E4C78A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E57D146B251D2EA900777498 /* PBXTargetDependency */,
 			);
 			name = TCHClone;
 			productName = TCHClone;
@@ -610,7 +697,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E56928E32457D55D004C891C /* Build configuration list for PBXNativeTarget "TCHCloneTests" */;
 			buildPhases = (
-				789E1DC34D8D1AF7CC4D99EE /* [CP] Check Pods Manifest.lock */,
+				71700114418BFA89F66A5E36 /* [CP] Check Pods Manifest.lock */,
 				E56928C82457D55D004C891C /* Sources */,
 				E56928C92457D55D004C891C /* Frameworks */,
 				E56928CA2457D55D004C891C /* Resources */,
@@ -629,12 +716,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E56928E62457D55D004C891C /* Build configuration list for PBXNativeTarget "TCHCloneUITests" */;
 			buildPhases = (
-				D13867C26EB7FF4042DD60D8 /* [CP] Check Pods Manifest.lock */,
+				E7FFDAB91E8AC8A009866658 /* [CP] Check Pods Manifest.lock */,
 				E56928D32457D55D004C891C /* Sources */,
 				E56928D42457D55D004C891C /* Frameworks */,
 				E56928D52457D55D004C891C /* Resources */,
-				EF26BD42F3D753E0F4252756 /* [CP] Embed Pods Frameworks */,
-				EB10315A83A79B912F621DFC /* [CP] Copy Pods Resources */,
+				92697E9221D1662FC9A255BB /* [CP] Embed Pods Frameworks */,
+				1111C9DB9F665438ED1459A9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -646,13 +733,32 @@
 			productReference = E56928D72457D55D004C891C /* TCHCloneUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		E57D145D251D2EA900777498 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E57D1470251D2EA900777498 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				69722D797918D5029D25111C /* [CP] Check Pods Manifest.lock */,
+				E57D145A251D2EA900777498 /* Sources */,
+				E57D145B251D2EA900777498 /* Frameworks */,
+				E57D145C251D2EA900777498 /* Resources */,
+				8842CE3F6397860C82852FC6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = E57D145E251D2EA900777498 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		E56928AB2457D556004C891C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1140;
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Trần Huy";
 				TargetAttributes = {
@@ -666,6 +772,9 @@
 					E56928D62457D55D004C891C = {
 						CreatedOnToolsVersion = 11.4.1;
 						TestTargetID = E56928B22457D556004C891C;
+					};
+					E57D145D251D2EA900777498 = {
+						CreatedOnToolsVersion = 12.0;
 					};
 				};
 			};
@@ -685,6 +794,7 @@
 				E56928B22457D556004C891C /* TCHClone */,
 				E56928CB2457D55D004C891C /* TCHCloneTests */,
 				E56928D62457D55D004C891C /* TCHCloneUITests */,
+				E57D145D251D2EA900777498 /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -699,7 +809,7 @@
 				E5981459247EC30400517E02 /* OrderCell.xib in Resources */,
 				E581A937251BA880005A1387 /* DetailOrderCell.xib in Resources */,
 				E52CD8AF246EA3C4002651EA /* RewardsInforVC.xib in Resources */,
-				E5A35CA82459E31D005CC394 /* GoogleService-Info.plist in Resources */,
+				E5FAAEF62524759600206F1C /* GoogleService-Info.plist in Resources */,
 				E56928C32457D55C004C891C /* Assets.xcassets in Resources */,
 				E581A866251A12BB005A1387 /* resources_images_icons_audio_wave.gif in Resources */,
 				E56928BE2457D556004C891C /* Main.storyboard in Resources */,
@@ -723,32 +833,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E57D145C251D2EA900777498 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57D1468251D2EA900777498 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		121AD533BE31EECBF41AD2E5 /* [CP] Check Pods Manifest.lock */ = {
+		0D9626C20667B9021AD87C6E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TCHClone/Pods-TCHClone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TCHClone-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-TCHClone/Pods-TCHClone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TCHClone/Pods-TCHClone-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6AC94A5E2485850C895F470A /* [CP] Copy Pods Resources */ = {
+		1111C9DB9F665438ED1459A9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TCHClone-TCHCloneUITests/Pods-TCHClone-TCHCloneUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TCHClone-TCHCloneUITests/Pods-TCHClone-TCHCloneUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TCHClone-TCHCloneUITests/Pods-TCHClone-TCHCloneUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		12F00C43A5CC01D440E4C78A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -765,7 +895,29 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TCHClone/Pods-TCHClone-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		789E1DC34D8D1AF7CC4D99EE /* [CP] Check Pods Manifest.lock */ = {
+		69722D797918D5029D25111C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TCHClone-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71700114418BFA89F66A5E36 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -787,7 +939,63 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D13867C26EB7FF4042DD60D8 /* [CP] Check Pods Manifest.lock */ = {
+		7EBAFF81E03ABB1E59FA2050 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TCHClone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8842CE3F6397860C82852FC6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TCHClone-OneSignalNotificationServiceExtension/Pods-TCHClone-OneSignalNotificationServiceExtension-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TCHClone-OneSignalNotificationServiceExtension/Pods-TCHClone-OneSignalNotificationServiceExtension-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TCHClone-OneSignalNotificationServiceExtension/Pods-TCHClone-OneSignalNotificationServiceExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92697E9221D1662FC9A255BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TCHClone-TCHCloneUITests/Pods-TCHClone-TCHCloneUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TCHClone-TCHCloneUITests/Pods-TCHClone-TCHCloneUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TCHClone-TCHCloneUITests/Pods-TCHClone-TCHCloneUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7FFDAB91E8AC8A009866658 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -809,57 +1017,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D1CFB162CFA2A414B3E4FC45 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TCHClone/Pods-TCHClone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TCHClone/Pods-TCHClone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TCHClone/Pods-TCHClone-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EB10315A83A79B912F621DFC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TCHClone-TCHCloneUITests/Pods-TCHClone-TCHCloneUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TCHClone-TCHCloneUITests/Pods-TCHClone-TCHCloneUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TCHClone-TCHCloneUITests/Pods-TCHClone-TCHCloneUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EF26BD42F3D753E0F4252756 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TCHClone-TCHCloneUITests/Pods-TCHClone-TCHCloneUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TCHClone-TCHCloneUITests/Pods-TCHClone-TCHCloneUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TCHClone-TCHCloneUITests/Pods-TCHClone-TCHCloneUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -867,7 +1024,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5FAAE882520EC8C00206F1C /* NotificationVC.swift in Sources */,
 				E56928F92457E2FE004C891C /* AccountVC.swift in Sources */,
+				E5FAAE8F2521C3EA00206F1C /* Notification+CoreDataProperties.swift in Sources */,
 				E52CD8B1246FDF20002651EA /* Designable.swift in Sources */,
 				E52CD8AE246EA3C4002651EA /* RewardsInforVC.swift in Sources */,
 				E52CD8AB246E5CE7002651EA /* AccountSection.swift in Sources */,
@@ -922,10 +1081,11 @@
 				E5A35CAC245BFBF7005CC394 /* Ultitiles.swift in Sources */,
 				E5C4857F2477AE18008D8887 /* CustomButtonImageVertical.swift in Sources */,
 				E5981458247EC30400517E02 /* OrderCell.swift in Sources */,
-				E581A876251ADFA2005A1387 /* Notification.swift in Sources */,
+				E581A876251ADFA2005A1387 /* NotificationServices.swift in Sources */,
 				E56928F32457DCBC004C891C /* NewsVC.swift in Sources */,
 				E583E7A72495BC8E008B4D9D /* InforView.swift in Sources */,
 				E50C41B224F44E97008DE306 /* LoginPhoneVC.swift in Sources */,
+				E5FAAE902521C3EA00206F1C /* Notification+CoreDataClass.swift in Sources */,
 				E5CD21592458BCDA008EA390 /* NewsHeader.swift in Sources */,
 				E598145B247F772300517E02 /* Item.swift in Sources */,
 				E52CD8B324717AA6002651EA /* CustomSegmentControll.swift in Sources */,
@@ -941,6 +1101,8 @@
 				E5A35CAE245C07D2005CC394 /* LoginVC.swift in Sources */,
 				E58514DB2509340000D240BC /* SettingsCell.swift in Sources */,
 				E581A7B32518B93B005A1387 /* CellCollectionPostItem.swift in Sources */,
+				E5FAAE972523B26900206F1C /* NotificationViewCell.swift in Sources */,
+				E5D4E28A251DF13200F9778A /* Notification.swift in Sources */,
 				E5A35CB2245C9AA7005CC394 /* SignUpVC.swift in Sources */,
 				E5A35CBB2460634A005CC394 /* Post.swift in Sources */,
 				E56680B42502824200B77986 /* InforAccount.swift in Sources */,
@@ -967,6 +1129,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E57D145A251D2EA900777498 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5C3DD78251D2FB20031B3C3 /* NotificationService.swift in Sources */,
+				E57D1465251D2EA900777498 /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -979,6 +1150,11 @@
 			isa = PBXTargetDependency;
 			target = E56928B22457D556004C891C /* TCHClone */;
 			targetProxy = E56928D82457D55D004C891C /* PBXContainerItemProxy */;
+		};
+		E57D146B251D2EA900777498 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E57D145D251D2EA900777498 /* OneSignalNotificationServiceExtension */;
+			targetProxy = E57D146A251D2EA900777498 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -997,6 +1173,14 @@
 				E56928C52457D55C004C891C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E57D1466251D2EA900777498 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E57D1467251D2EA900777498 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1118,9 +1302,11 @@
 		};
 		E56928E12457D55D004C891C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 671696353556CE3DBA50BBB9 /* Pods-TCHClone.debug.xcconfig */;
+			baseConfigurationReference = 72AAD8D85A59BB92AC107FFA /* Pods-TCHClone.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TCHClone/TCHClone.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96NR9V5ZU6;
@@ -1140,8 +1326,9 @@
 		};
 		E56928E22457D55D004C891C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA109C5955829CED21A34F03 /* Pods-TCHClone.release.xcconfig */;
+			baseConfigurationReference = 42D156021C6F5780FD20AB43 /* Pods-TCHClone.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TCHClone/TCHCloneRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -1163,7 +1350,7 @@
 		};
 		E56928E42457D55D004C891C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C434BA29B198D2DD353CD19A /* Pods-TCHCloneTests.debug.xcconfig */;
+			baseConfigurationReference = 2D396566E440BC70183E286D /* Pods-TCHCloneTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1185,7 +1372,7 @@
 		};
 		E56928E52457D55D004C891C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B74951BC4409505E69F0381 /* Pods-TCHCloneTests.release.xcconfig */;
+			baseConfigurationReference = 0E1451CFE23ADF7816D4AF6F /* Pods-TCHCloneTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1207,7 +1394,7 @@
 		};
 		E56928E72457D55D004C891C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B798B16900735B887E26F97 /* Pods-TCHClone-TCHCloneUITests.debug.xcconfig */;
+			baseConfigurationReference = 46A1783B7CF468629E966B8F /* Pods-TCHClone-TCHCloneUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1227,7 +1414,7 @@
 		};
 		E56928E82457D55D004C891C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B632D3BE24E7478C66B9208 /* Pods-TCHClone-TCHCloneUITests.release.xcconfig */;
+			baseConfigurationReference = 980C9AA1E1D4B7DCD3302ECB /* Pods-TCHClone-TCHCloneUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1242,6 +1429,54 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TCHClone;
+			};
+			name = Release;
+		};
+		E57D146E251D2EA900777498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B82EECB96003853585B090E /* Pods-TCHClone-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96NR9V5ZU6;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TrHuy.TCHClone.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E57D146F251D2EA900777498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 638AB0AE7C6457014E3E280D /* Pods-TCHClone-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96NR9V5ZU6;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TrHuy.TCHClone.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -1280,6 +1515,15 @@
 			buildConfigurations = (
 				E56928E72457D55D004C891C /* Debug */,
 				E56928E82457D55D004C891C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E57D1470251D2EA900777498 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E57D146E251D2EA900777498 /* Debug */,
+				E57D146F251D2EA900777498 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

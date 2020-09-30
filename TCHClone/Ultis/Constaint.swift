@@ -10,6 +10,7 @@ import Firebase
 
 // MARK: - Key API GoogleMaps
 let API_KEY = "AIzaSyAFHkS7YIReMxxdMqDsQt9ZP7ylQ0UcT9U"
+let APP_ID_ONESIGNAL = "0133d280-1660-415e-a263-5b83bb191078"
 
 // MARK: - Root References
 

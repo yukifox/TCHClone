@@ -7,8 +7,10 @@
 //
 
 import Foundation
-class NetworkingServices {
-    private init(){}
+import UserNotifications
+import OneSignal
+class NetworkingServices: UNNotificationServiceExtension {
+    private override init(){}
     static let shared = NetworkingServices()
     
     func request(_ urlPath: String, completion: @escaping(Result<Data, NSError>) -> Void) {
@@ -26,4 +28,9 @@ class NetworkingServices {
             task.resume()
         }
     }
+    override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) {
+        let userInfor = request.content.userInfo
+        print("Running NotificationServiceExtension: userInfo = \(userInfor.description)")
+    }
+    
 }

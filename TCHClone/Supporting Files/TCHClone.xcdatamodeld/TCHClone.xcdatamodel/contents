@@ -16,6 +16,17 @@
         <attribute name="tranchautrang" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="type" optional="YES" attributeType="String"/>
     </entity>
+    <entity name="NotificationData" representedClassName="NotificationData" syncable="YES">
+        <attribute name="body" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="imgUrl" optional="YES" attributeType="String"/>
+        <attribute name="isRead" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="link" optional="YES" attributeType="String"/>
+        <attribute name="notiID" optional="YES" attributeType="String"/>
+        <attribute name="subtitle" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+    </entity>
     <entity name="PostData" representedClassName="PostData" syncable="YES">
         <attribute name="createdAt" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="descriptionPost" optional="YES" attributeType="String"/>
@@ -29,5 +40,6 @@
     <elements>
         <element name="ItemData" positionX="-63" positionY="36" width="128" height="253"/>
         <element name="PostData" positionX="-63" positionY="-18" width="128" height="163"/>
+        <element name="NotificationData" positionX="-63" positionY="117" width="128" height="178"/>
     </elements>
 </model>
